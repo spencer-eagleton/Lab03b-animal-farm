@@ -10,6 +10,25 @@ main {
     padding: 30px;
 }
 
+.beasts {
+    display: grid;
+    grid-template-columns: repeat( auto-fit, minmax(200px, 1fr) );
+    grid-auto-rows: 200px;
+    grid-gap: 10px;
+    
+}
+
+.beast {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    cursor: grab;
+    max-width: 200px;
+    
+    border: 5px dotted;
+    border-radius: 50%;
+}
+
 header {
     background-color: #A2D7D2;
     height: 110px;
